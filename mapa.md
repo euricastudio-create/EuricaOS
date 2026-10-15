@@ -9,6 +9,8 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 - Próximo passo: lançar produtos sozinha, fazendo todas as partes (mineração, produto, página, criativos, tráfego, atendimento).
 - O produto da nutricionista (Láminas Nutricionales Pro e Prescripción Nutricional Pro, marca Nutri Innovadora) continua na pasta própria `C:\Users\ferna\OneDrive\Desktop\DIGITAL\DEVOCIONAL\NUTRI\Nutri Claude`, só para criativos. Lá não faço tráfego nem olho a biblioteca de anúncios, porque isso é da minha sócia (somos coprodutoras). A EuricaOS é para os produtos novos, do início ao fim.
 - Idioma de entrada: normalmente começo minerando produtos em espanhol.
+- Já tenho um produto novo pronto (feito no ChatGPT) para começar a EURICA sozinha. Falta: juntar os arquivos, ajustar a prévia da página para low ticket (mais rápida), cadastrar na Hotmart, minerar criativos (já tenho sites para modelar) e subir o primeiro anúncio.
+- Na Nutri, atendimento e análise de lucro são feitos pela sócia (revezamos, mas é mais ela); eu não tenho acesso às planilhas dela.
 - Tempo total hoje: cerca de 5 horas por dia, 35 horas por semana.
 
 ## Ferramentas
@@ -27,7 +29,10 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 
 ## Página de vendas: estrutura que eu uso
 
-Modelos de referência: as páginas da Nutri (Láminas Nutricionales Pro e Prescripción Nutricional Pro). Vou subir os arquivos.
+Modelos de referência: capturas nesta pasta (`CAPTURA PAGINA LAMINAS ESPANHOL.png` e `prescricao pagina de venda frances.png`) e a página nova em HTML feita pelo Claude: https://es.nutriinnovadora.com/
+- Antes as páginas eram montadas seção por seção no construtor da Hostinger; agora são feitas em HTML pelo Claude, o que ficou muito mais fácil.
+- Medição em 15/10/2026 da página ES: HTML de 70 KB, abre em cerca de 0,5 s; imagens em WebP (o mockup do topo tem 95 KB); total de 2,6 MB com imagens e o vídeo do Canva (766 KB), com carregamento preguiçoso (lazy) nas imagens de baixo. Está leve.
+- Elementos que as páginas da Nutri têm além da estrutura abaixo: bloco "¿Te identificas?" com as dores, depoimentos, "como você recebe o acesso", sobre a autora, garantia de 7 dias, perguntas frequentes e meios de pagamento.
 
 1. Topo: mockup só do produto principal, mostrando páginas internas. Chamada principal já falando da dor que o produto resolve. Botão de acesso logo abaixo do mockup.
 2. O que tem no produto, sempre com páginas internas, para a pessoa tangibilizar o que vai receber.
@@ -97,6 +102,13 @@ Regra de ouro: página leve, imagens leves, abrir muito rápido. Low ticket é c
 | Página e funil | Configurar order bump e upsell | Sim | Sim | Sim | ? | Determinística |
 | Página e funil | Traduzir a página para outros idiomas | Sim | Sim | Sim | ? | Determinística (com revisão) |
 | Página e funil | **Total** | | | | **cerca de 5 h por página** | |
+| Atendimento | Responder no WhatsApp quem não conseguiu acessar | Sim | Não (hoje a sócia faz na Nutri) | Sim | ? | Determinística (respostas padrão) |
+| Atendimento | Tirar dúvidas antes e depois da compra | Sim | Não | Sim | ? | Probabilística |
+| Atendimento | Pedidos de reembolso | Sim | Não | Sim | ? | Determinística (regra da garantia) |
+| Atendimento | Comentários nos anúncios | Sim | Não | Sim | ? | Probabilística |
+| Financeiro | Acompanhar vendas e saques na Hotmart | Sim | Sim | Sim | ? | Determinística |
+| Financeiro | Controlar gasto em anúncio contra venda (lucro por produto); planilha ainda não existe para os meus produtos | Sim | Sim | Sim | ? | Determinística |
+| Financeiro | Emitir nota fiscal pela Spedy (já regularizado) | Sim | Sim | Sim | ? | Determinística |
 
 ## Tarefas escolhidas e as cinco perguntas
 
