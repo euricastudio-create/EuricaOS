@@ -8,10 +8,20 @@
 - Biblioteca de Anúncios do Facebook, Radar Ads, Deep Tube, ranking da Hotmart, Perplexity
 - Validado = 15 ou mais anúncios do mesmo produto, rodando há pelo menos 10 a 12 dias
 
-## Ofertas de crochê que servem de modelo
+## Ofertas de crochê que serviram de base para as 40 bolsas
+A Fernanda analisou todas estas páginas para escolher e criar o produto (links sem os parâmetros de rastreio).
+
 | Quem | Onde | O que faz bem | O que faz mal |
 |---|---|---|---|
-| `[a preencher]`: a Fernanda vai mandar os links | | | |
+| Mundo do Fio (bolsas) | https://mundodofio.com.br/bolsas (rodando no Facebook) | `[a preencher]` | `[a preencher]` |
+| Página na Biblioteca de Anúncios | https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=382486771623525 | `[a preencher]` | `[a preencher]` |
+| Manual Criativo: 101 patrones de bolsos a crochê (espanhol) | https://manualcriativo.com.br/bcr-esp-101-patronesdebolsos-acroche/ | `[a preencher]` | `[a preencher]` |
+| Zenettia: bolsas de crochê | https://zenettia.com/bolsas-de-croche-ad/ (Pinterest orgânico e pago) | `[a preencher]` | `[a preencher]` |
+| Pin no Pinterest | https://br.pinterest.com/pin/610589662025008082/ | `[a preencher]` | `[a preencher]` |
+| Flores de crochê | https://floresdecroche01.lovable.app/ | `[a preencher]` | `[a preencher]` |
+| Encantarte Crochê: presépio encantado | https://encantartecroche.com/presepio-encantado-2026-old/ | `[a preencher]` | `[a preencher]` |
+| Ctejidas: bolsos tejidos para la playa | https://www.ctejidas.co/bolsos-tejidos-perfectos-para-la-playa-tutoriales-de-crochet/ | `[a preencher]` | `[a preencher]` |
+| Bolsos de lujo crochet | https://bolsosdelujocrochet.com/ | `[a preencher]` | `[a preencher]` |
 
 ## Referências de aprendizado
 | Quem | O que ensina | Opinião da Fernanda |

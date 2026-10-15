@@ -13,5 +13,5 @@
 - Kit Sem Encrenca fica para quando o low ticket estiver rodando certinho
 
 ## Travado / esperando
-- Links das ofertas de crochê que servem de modelo: a Fernanda vai mandar
+- Análise (o que faz bem e mal) das 9 ofertas de crochê listadas em empresa/mercado.md
 - Transcrição das aulas do Alan Torquato: depois da fundação
