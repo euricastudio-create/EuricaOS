@@ -110,6 +110,22 @@ Regra de ouro: página leve, imagens leves, abrir muito rápido. Low ticket é c
 | Financeiro | Controlar gasto em anúncio contra venda (lucro por produto); planilha ainda não existe para os meus produtos | Sim | Sim | Sim | ? | Determinística |
 | Financeiro | Emitir nota fiscal pela Spedy (já regularizado) | Sim | Sim | Sim | ? | Determinística |
 
-## Tarefas escolhidas e as cinco perguntas
+## As cinco perguntas (cinco de cinco, quatro não serve)
 
-(a preencher)
+| Pergunta | A. Página de vendas em HTML | B. Modelagem da oferta | C. Filtro da mineração |
+|---|---|---|---|
+| 1. Volta toda semana? | Sim | Sim | Sim |
+| 2. Termina em algo que dá para entregar? | Sim (página pronta) | Sim (dores, promessa, copy) | Sim (lista de validados) |
+| 3. Bato o olho e sei se ficou boa? | Sim | Sim | Sim |
+| 4. O material de partida já está em arquivo? | Sim | Sim | Não (dentro de ferramentas com login) |
+| 5. Se sair errada, o estrago é pequeno? | Sim | Sim | Sim |
+
+Tráfego ficou de fora por agora: falha na 3 (ainda não sei julgar a decisão) e o erro custa dinheiro. Volta depois de transcrever o curso do Alan Torquato.
+
+## A tarefa escolhida
+
+**Página de vendas em HTML**, a partir da minha estrutura e das páginas da Nutri como referência. Escolhida em 15/10/2026. Primeiro uso: o produto novo que já está pronto.
+
+Está boa quando: segue a minha estrutura (mockup com a dor no topo, páginas internas, bônus com valor riscado, oferta com ancoragem, só o botão da oferta com o link da Hotmart e os outros levando até ele), abre rápido no celular com imagens leves, e eu só preciso revisar a copy. (Proposta do Claude; ajustar se precisar.)
+
+Próxima da fila: B, modelagem da oferta (gera a copy que a página monta).
