@@ -25,6 +25,19 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 - Oferta impactante, página de vendas rápida, promessa que resolve a dor e mostra a transformação na vida da pessoa.
 - Ao modelar, nunca copiar: melhorar a copy, a dor abordada, a resolução e a transformação entregue.
 
+## Página de vendas: estrutura que eu uso
+
+Modelos de referência: as páginas da Nutri (Láminas Nutricionales Pro e Prescripción Nutricional Pro). Vou subir os arquivos.
+
+1. Topo: mockup só do produto principal, mostrando páginas internas. Chamada principal já falando da dor que o produto resolve. Botão de acesso logo abaixo do mockup.
+2. O que tem no produto, sempre com páginas internas, para a pessoa tangibilizar o que vai receber.
+3. Bônus: cada um com um valor, riscado, e "grátis" (ancoragem).
+4. Oferta: mockup do produto principal junto com os bônus; lista de tudo que ela recebe; ancoragem de preço (ex.: principal US$ 47, bônus US$ 12,90 e 15,90; tudo por US$ 29,90).
+5. Botão principal da oferta: é o único com o link da Hotmart.
+6. Todos os outros botões da página (inclusive o último, lá embaixo) levam para esse botão principal, para a pessoa ver a oferta inteira antes de comprar.
+
+Regra de ouro: página leve, imagens leves, abrir muito rápido. Low ticket é compra por impulso, sem pensar; se a página demora, a conversão cai e se perdem muitos clientes.
+
 ## Tráfego: onde estou e os métodos que conheço
 
 - Experiência: subi só duas campanhas, com bastante dificuldade; fiz uma venda e não soube dar continuidade no Meta Ads. Quero aprender a fundo análise de métricas, com a ajuda do Claude.
@@ -33,11 +46,12 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 
 ### Método Alan Torquato (LATAM, em dólar)
 - Primeiro testa o ticket, para quebrar a objeção de preço: começa em 6,90, orçamento de 25 por dia, espera 3 dias.
-- Vendeu: sobe para 9,90 e orçamento de 50, espera mais 3 dias. Depois 14,90 (orçamentos seguintes: ver no curso).
-- Continua subindo até parar de vender. Ex.: vende a 19,90 e para a 24,90, então o teto do produto é 19,90.
+- Moeda: ticket em dólar; orçamento diário no Facebook em real.
+- Escada de ticket: US$ 6,90, 9,90, 14,90, 19,90, 24,90. Escada de orçamento: R$ 25, 50, 100 por dia (próximos degraus: ver no curso).
+- Começa em US$ 6,90 com R$ 25 por dia e espera 3 dias. Vendeu: sobe para US$ 9,90 e R$ 50, espera mais 3 dias. Depois US$ 14,90 e R$ 100.
+- Continua subindo até parar de vender. Ex.: vende a US$ 19,90 e para a US$ 24,90, então o teto do produto é US$ 19,90.
 - Campanha V1: 1 campanha, 1 anúncio, 1 criativo. Usada para testar o ticket e o orçamento. Depois se fazem várias V1, uma por criativo.
 - Campanha V2: quando o produto já funciona. 1 campanha, 1 anúncio, uns 4 criativos que já se sabe que vendem.
-- A confirmar: moeda dos tickets e do orçamento (dólar ou real).
 
 ### Método Juliane Maria (Europa, em euro)
 - Começa com ticket mais alto, por exemplo 27 euros.
@@ -76,6 +90,13 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 | Marketing e tráfego | Subir campanhas no Meta Ads (V1 e V2) | Sim | Sim (ainda aprendendo) | Sim | ? | Determinística (passo a passo do método) |
 | Marketing e tráfego | Ler as métricas no Gerenciador | Sim (diário) | Sim (ainda aprendendo) | Sim | ? | Determinística (leitura) |
 | Marketing e tráfego | Decidir: pausar o que não converte, subir ticket, aumentar orçamento, escalar o que vende | Sim | Sim (ainda aprendendo) | Sim | ? | Probabilística, com regras do método |
+| Marketing e tráfego | **Total do setor** | | | | **cerca de 10 h (1,5 h por dia, a confirmar)** | |
+| Página e funil | Escrever a copy da página | Sim | Sim | Sim | ? | Probabilística |
+| Página e funil | Montar a página na Hostinger, com imagens leves | Sim | Sim | Sim | ? | Determinística (modelo fixo) |
+| Página e funil | Criar o produto e o checkout na Hotmart | Sim | Sim | Sim | ? | Determinística |
+| Página e funil | Configurar order bump e upsell | Sim | Sim | Sim | ? | Determinística |
+| Página e funil | Traduzir a página para outros idiomas | Sim | Sim | Sim | ? | Determinística (com revisão) |
+| Página e funil | **Total** | | | | **cerca de 5 h por página** | |
 
 ## Tarefas escolhidas e as cinco perguntas
 
