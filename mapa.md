@@ -25,6 +25,24 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 - Oferta impactante, página de vendas rápida, promessa que resolve a dor e mostra a transformação na vida da pessoa.
 - Ao modelar, nunca copiar: melhorar a copy, a dor abordada, a resolução e a transformação entregue.
 
+## Tráfego: onde estou e os métodos que conheço
+
+- Experiência: subi só duas campanhas, com bastante dificuldade; fiz uma venda e não soube dar continuidade no Meta Ads. Quero aprender a fundo análise de métricas, com a ajuda do Claude.
+- Cursos feitos: imersão gratuita do Pedro Sobral (achei focada em negócio local), LADEIRA I.A (mais high ticket, mas trazendo low ticket), curso do Alan Torquato (o método que eu uso), mentoria com Juliane Maria (venda na Europa).
+- Pendência: transcrever as aulas do curso do Alan Torquato (plataforma própria, não está no YouTube) para o Claude ter esse conhecimento.
+
+### Método Alan Torquato (LATAM, em dólar)
+- Primeiro testa o ticket, para quebrar a objeção de preço: começa em 6,90, orçamento de 25 por dia, espera 3 dias.
+- Vendeu: sobe para 9,90 e orçamento de 50, espera mais 3 dias. Depois 14,90 (orçamentos seguintes: ver no curso).
+- Continua subindo até parar de vender. Ex.: vende a 19,90 e para a 24,90, então o teto do produto é 19,90.
+- Campanha V1: 1 campanha, 1 anúncio, 1 criativo. Usada para testar o ticket e o orçamento. Depois se fazem várias V1, uma por criativo.
+- Campanha V2: quando o produto já funciona. 1 campanha, 1 anúncio, uns 4 criativos que já se sabe que vendem.
+- A confirmar: moeda dos tickets e do orçamento (dólar ou real).
+
+### Método Juliane Maria (Europa, em euro)
+- Começa com ticket mais alto, por exemplo 27 euros.
+- Já inicia com 1 campanha, 1 anúncio e 10 criativos, orçamento de 200.
+
 ## Setores
 
 0. Mineração: procurar produtos que já estão validados e modelar em cima deles (vem antes de tudo)
@@ -53,6 +71,11 @@ Modelo: lança vários materiais, mantém o que dá certo, troca o que dá errad
 | Criação | Organizar as imagens geradas no ChatGPT e unir num material só (Canva) | Sim | Sim | Sim | ? | Determinística |
 | Criação | Bônus: estrutura, capa e conteúdo | Sim | Sim | Sim | ? | Probabilística |
 | Criação | Traduzir para outros idiomas quando o produto dá certo no primeiro | Sim | Sim | Sim | ? | Determinística (com revisão) |
+| Criação | **Total do setor** | | | | **15 h** | |
+| Marketing e tráfego | Minerar criativos e produzir os criativos | Sim | Sim | Sim | ? | Probabilística |
+| Marketing e tráfego | Subir campanhas no Meta Ads (V1 e V2) | Sim | Sim (ainda aprendendo) | Sim | ? | Determinística (passo a passo do método) |
+| Marketing e tráfego | Ler as métricas no Gerenciador | Sim (diário) | Sim (ainda aprendendo) | Sim | ? | Determinística (leitura) |
+| Marketing e tráfego | Decidir: pausar o que não converte, subir ticket, aumentar orçamento, escalar o que vende | Sim | Sim (ainda aprendendo) | Sim | ? | Probabilística, com regras do método |
 
 ## Tarefas escolhidas e as cinco perguntas
 
