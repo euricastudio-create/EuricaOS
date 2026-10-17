@@ -69,12 +69,22 @@ section{padding:clamp(52px,8vw,96px) 0}
 .price-line small{color:var(--muted);font-size:.9rem;line-height:1.3}
 
 /* pain */
-.dolor{background:var(--paper);border-block:1px solid var(--border)}
-.dlist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:900px;margin:0 auto}
-.dlist li{display:flex;gap:14px;align-items:flex-start;background:var(--cream);border-radius:var(--r);padding:18px 20px;font-weight:500}
-.dlist li::before{content:"✕";flex:none;width:26px;height:26px;border-radius:50%;background:#f1d9d2;color:var(--red);font-weight:700;font-size:.8rem;display:grid;place-items:center;margin-top:1px}
-.turn{max-width:760px;margin:32px auto 0;text-align:center;font-family:"Playfair Display",serif;font-size:clamp(1.3rem,1.1rem + .8vw,1.7rem);line-height:1.35}
-.turn em{font-style:italic}
+.vs{background:var(--paper);border-block:1px solid var(--border)}
+.vs-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:16px;max-width:860px;margin:0 auto;align-items:stretch}
+.vs-col{border-radius:var(--r-lg);padding:22px 22px 24px}
+.vs-col h3{font-size:1.3rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.vs-col ul{list-style:none;display:grid;gap:10px}
+.vs-col li{display:flex;gap:10px;align-items:flex-start;font-weight:600;line-height:1.35}
+.vs-col li::before{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;font-weight:700}
+.sin{background:#f1ebe4;color:#8a7b70;align-self:center}
+.sin h3{color:#8a7b70}
+.sin li{text-decoration:line-through;text-decoration-color:rgba(162,74,58,.45)}
+.sin li::before{content:"✕";background:#f1d9d2;color:var(--red)}
+.con{background:var(--cream);border:2px solid var(--gold);box-shadow:var(--sh-lg)}
+.con h3{color:var(--espresso)}
+.con li::before{content:"✓";background:var(--green);color:#fff}
+.vs-img{border-radius:var(--r);overflow:hidden;margin:-6px -6px 16px;aspect-ratio:4/3}
+.vs-img img{height:100%;object-fit:cover}
 
 /* láminas */
 .laminas{background:var(--espresso);color:#f3e6d3;overflow:hidden}
@@ -193,7 +203,7 @@ footer p{max-width:760px;margin:0 auto 10px}
   .hero .sub{margin:10px 0 16px;font-size:1rem}
   .pain{font-size:.82rem;margin-bottom:10px}
   .price-line{margin-bottom:12px}.price-line .p{font-size:2.2rem}
-  .dlist{grid-template-columns:1fr}
+  .vs-grid{grid-template-columns:1fr}.sin{align-self:stretch}
   .mgrid{grid-template-columns:repeat(2,1fr);gap:10px}
   .mc b{font-size:1rem}.mc figcaption{padding:8px 10px 10px}
   .mnames{columns:2;font-size:.86rem}
@@ -231,21 +241,8 @@ footer p{max-width:760px;margin:0 auto 10px}
   </div>
 </header>
 
-<!-- 2. ¿TE IDENTIFICAS? -->
-<section class="dolor">
-  <div class="wrap">
-    <div class="sec-head center"><span class="eyebrow">¿Te identificas?</span><h2>Tejer un bolso no debería ser <em>una apuesta</em></h2></div>
-    <ul class="dlist">
-      <li>Pasas horas tejiendo y el bolso termina con cara de casero.</li>
-      <li>Gastas hilo y tiempo en un modelo que ya pasó de moda.</li>
-      <li>Empiezas un video y te pierdes a la mitad, sin saber cómo seguir.</li>
-      <li>Sigues una receta suelta y no sabes cómo armar ni dar el acabado.</li>
-    </ul>
-    <p class="turn">Aquí tienes todo en un solo lugar: el modelo, los materiales, el gráfico y <em>cada paso con fotos</em>, del primer punto al acabado.</p>
-  </div>
-</section>
 
-<!-- 3. O QUE TEM DENTRO: láminas -->
+<!-- 2. O QUE TEM DENTRO: láminas -->
 <section class="laminas" id="laminas">
   <div class="wrap center">
     <span class="eyebrow">Mira el material por dentro</span>
@@ -272,7 +269,7 @@ footer p{max-width:760px;margin:0 auto 10px}
 </section>
 <div class="lbx" id="lbx"><button aria-label="Cerrar">✕</button><img alt="Lámina ampliada"></div>
 
-<!-- 3b. OS MODELOS -->
+<!-- 3. OS MODELOS -->
 <section id="modelos">
   <div class="wrap">
     <div class="sec-head center">
@@ -304,7 +301,35 @@ footer p{max-width:760px;margin:0 auto 10px}
   </div>
 </section>
 
-<!-- 4. BÔNUS -->
+<!-- 4. SIN GUÍA × CON LA GUÍA -->
+<section class="vs">
+  <div class="wrap">
+    <div class="sec-head center"><span class="eyebrow">¿Te identificas?</span><h2>Tejer un bolso no debería ser <em>una apuesta</em></h2></div>
+    <div class="vs-grid">
+      <div class="vs-col sin">
+        <h3>Sin guía</h3>
+        <ul>
+          <li>Bolso con cara de casero</li>
+          <li>Modelo pasado de moda</li>
+          <li>Te pierdes en la mitad del video</li>
+          <li>Receta suelta, sin montaje ni acabado</li>
+        </ul>
+      </div>
+      <div class="vs-col con">
+        <div class="vs-img"><img src="assets/modelo-07-hobo-caramelo.webp" alt="Bolso Hobo Caramelo terminado con la guía" loading="lazy" width="560" height="420"></div>
+        <h3>Con la guía</h3>
+        <ul>
+          <li>Acabado de boutique</li>
+          <li>40 modelos actuales</li>
+          <li>Cada paso con foto</li>
+          <li>Gráfico, montaje y acabado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. BÔNUS -->
 <section class="bonos" id="bonos">
   <div class="wrap">
     <div class="sec-head center"><span class="eyebrow">Solo comprando hoy</span><h2>Llévate también <em>5 bonos gratis</em></h2><p class="lead">Cinco materiales extra con el mismo paso a paso, fotos y gráficos de la colección. Toca las páginas para verlas en grande.</p></div>
@@ -319,7 +344,7 @@ footer p{max-width:760px;margin:0 auto 10px}
   </div>
 </section>
 
-<!-- 5. OFERTA: o único botão com o link da Hotmart -->
+<!-- 6. OFERTA: o único botão com o link da Hotmart -->
 <section class="offer" id="oferta">
   <div class="wrap">
     <div class="sec-head center"><span class="eyebrow">Todo lo que recibes</span><h2>40 modelos + <em style="color:var(--gold)">5 bonos</em> por un solo pago</h2></div>
