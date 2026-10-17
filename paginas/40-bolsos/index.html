@@ -8,7 +8,8 @@
 <meta property="og:title" content="40 Bolsos a Crochet que Parecen de Boutique">
 <meta property="og:description" content="40 modelos paso a paso, 5 bonos y acceso inmediato.">
 <meta property="og:image" content="assets/mockup-guia.webp">
-<link rel="preload" as="image" href="assets/mockup-guia.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/fundo-bolsas-2.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/lamina-1.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--espresso);font-family:"DM Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+body{background:var(--cream);color:var(--espresso);font-family:"DM Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.12;text-wrap:balance}
@@ -56,7 +57,16 @@ section{padding:clamp(52px,8vw,96px) 0}
 .pain{display:inline-block;background:var(--paper);border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:.9rem;font-weight:600;color:var(--brown);margin-bottom:14px}
 .hero h1 em{font-style:italic}
 .hero .sub{color:var(--brown);font-size:1.1rem;margin:16px 0 20px}
-.hero-img{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-lg);background:var(--cream-2)}
+.scene{position:relative;aspect-ratio:1/1;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-lg);background:var(--cream-2)}
+.scene .bg{position:absolute;inset:0;height:100%;object-fit:cover;object-position:50% 80%}
+.scene::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(248,242,232,0) 45%,rgba(248,242,232,.55) 100%)}
+.scene .dev{position:absolute;z-index:2}
+.scene .tab{left:7%;bottom:3%;width:43%;transform:rotate(-4deg)}
+.scene .ph{left:47%;bottom:2%;width:20%;transform:rotate(5deg)}
+.dev{background:#1d1511;padding:3.2%;border-radius:clamp(10px,2.4vw,18px);box-shadow:0 18px 40px rgba(20,12,8,.38),inset 0 0 0 1.5px #3a2c24}
+.dev img{border-radius:clamp(5px,1.2vw,9px);background:#fff}
+.dev.ph{padding:5%;border-radius:clamp(14px,3.4vw,24px)}
+.dev.ph img{aspect-ratio:9/17;object-fit:cover;object-position:top;border-radius:clamp(10px,2.4vw,17px)}
 .ticks{list-style:none;display:grid;gap:9px;margin-top:22px}
 .ticks li{display:flex;gap:11px;align-items:flex-start;font-weight:600}
 .ticks li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font-size:.75rem;display:grid;place-items:center;margin-top:3px}
@@ -116,12 +126,14 @@ section{padding:clamp(52px,8vw,96px) 0}
 .bgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .bc{background:var(--paper);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-sm);display:flex;flex-direction:column}
 .bc .cov{background:var(--cream);padding:16px 16px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end}
-.bc .cov img{border-radius:6px 6px 0 0;box-shadow:0 8px 20px rgba(37,24,18,.18);cursor:zoom-in}
+.bc .cov{align-items:center;padding-bottom:16px}
+.bc .cov img{cursor:zoom-in}
+.bc .cov figure:last-child img{border-radius:3px;box-shadow:0 10px 24px rgba(37,24,18,.22);transform:rotate(2deg)}
 .bc .cov figure{position:relative}
 .bc .cov figcaption{position:absolute;left:6px;bottom:6px;background:rgba(255,253,249,.94);border-radius:99px;padding:1px 9px;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brown)}
 .bc .tx{padding:14px 18px 18px;display:flex;flex-direction:column;flex:1}
 .bc.super{grid-column:1/-1}
-@media(min-width:901px){.bc.super{flex-direction:row}.bc.super .cov{flex:0 0 52%;padding-bottom:16px}.bc.super .cov img{border-radius:6px}.bc.super .tx{justify-content:center;padding:28px}}
+@media(min-width:901px){.bc.super{flex-direction:row}.bc.super .cov{flex:0 0 52%;padding-bottom:16px}.bc.super .tx{justify-content:center;padding:28px}}
 .bc small{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--camel)}
 .bc h3{font-size:1.12rem;margin:2px 0 6px}
 .bc p{font-size:.9rem;color:var(--brown);flex:1}
@@ -139,8 +151,9 @@ section{padding:clamp(52px,8vw,96px) 0}
 .pack{position:relative;margin-bottom:22px}
 .pack .main{border-radius:var(--r);overflow:hidden;box-shadow:0 22px 44px rgba(0,0,0,.4)}
 .pack .row{display:flex;justify-content:center;margin-top:-34px;padding:0 6px;position:relative}
-.pack .row img{width:19%;border-radius:4px;box-shadow:0 10px 22px rgba(0,0,0,.45);margin:0 -1%}
-.pack .row img:nth-child(odd){transform:rotate(-3deg)}.pack .row img:nth-child(even){transform:rotate(3deg) translateY(6px)}
+.pack .row .dev{width:19%;margin:0 -.5%;padding:2.4%;border-radius:8px}
+.pack .row .dev img{border-radius:3px}
+.pack .row .dev:nth-child(odd){transform:rotate(-3deg)}.pack .row .dev:nth-child(even){transform:rotate(3deg) translateY(6px)}
 .stack{list-style:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-lg)}
 .stack li{display:flex;justify-content:space-between;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,.1);font-size:.95rem}
 .stack li:last-child{border:0}
@@ -180,11 +193,6 @@ details p{padding-bottom:18px;color:var(--brown)}
 footer{background:var(--espresso);color:#cdb9a3;font-size:.8rem;padding:32px 0;text-align:center}
 footer p{max-width:760px;margin:0 auto 10px}
 
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,253,249,.97);backdrop-filter:blur(10px);border-top:1px solid var(--border);padding:10px 14px;display:flex;align-items:center;justify-content:center;gap:14px;transform:translateY(110%);transition:transform .3s}
-.sticky.show{transform:none}
-.sticky .btn{padding:14px 22px;flex:1;max-width:400px;font-size:1rem}
-.sticky small{font-weight:600;color:var(--brown);line-height:1.2;font-size:.8rem}
-.sticky small b{display:block;font-size:1.15rem;color:var(--espresso)}
 
 @media(max-width:900px){
   .hero-grid,.offer-grid{grid-template-columns:1fr}
@@ -218,7 +226,7 @@ footer p{max-width:760px;margin:0 auto 10px}
       <span class="pain">¿Tus bolsos quedan con cara de “hecho en casa”?</span>
       <h1>Teje bolsos de crochet que <em>parecen de boutique</em></h1>
       <p class="sub">40 modelos explicados paso a paso, con fotos, gráficos y materiales, para que cada bolso salga con acabado profesional desde el primer intento.</p>
-      <div class="mob hero-img"><img src="assets/mockup-guia.webp" alt="Guía 40 Bolsos a Crochet abierta en tableta y celular" width="900" height="675" fetchpriority="high"></div>
+      <div class="mob"><div class="scene"><img class="bg" src="assets/fundo-bolsas-2.webp" alt="Bolsos de crochet sobre la mesa" width="1000" height="1250" fetchpriority="high"><div class="dev tab"><img src="assets/lamina-1.webp" alt="Lámina de presentación del Bolso Hobo Caramelo en la tableta" width="720" height="960"></div><div class="dev ph"><img src="assets/lamina-4.webp" alt="Paso a paso con fotos en el celular" width="720" height="960"></div></div></div>
       <div class="price-line"><span class="p" data-precio>US$ 6,90</span><small>pago único<br>sin mensualidades</small></div>
       <a href="#oferta" class="btn block pulse">QUIERO MIS 40 MODELOS</a>
       <div class="trust"><span>Pago seguro</span><span>Acceso inmediato</span><span>Garantía de 7 días</span></div>
@@ -228,7 +236,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         <li>5 bonos incluidos y acceso inmediato</li>
       </ul>
     </div>
-    <div class="desk hero-img"><img src="assets/mockup-guia.webp" alt="Guía 40 Bolsos a Crochet abierta en tableta y celular" width="900" height="675" fetchpriority="high"></div>
+    <div class="desk"><div class="scene"><img class="bg" src="assets/fundo-bolsas-2.webp" alt="Bolsos de crochet sobre la mesa" width="1000" height="1250" fetchpriority="high"><div class="dev tab"><img src="assets/lamina-1.webp" alt="Lámina de presentación del Bolso Hobo Caramelo en la tableta" width="720" height="960"></div><div class="dev ph"><img src="assets/lamina-4.webp" alt="Paso a paso con fotos en el celular" width="720" height="960"></div></div></div>
   </div>
 </header>
 
@@ -310,11 +318,11 @@ footer p{max-width:760px;margin:0 auto 10px}
   <div class="wrap">
     <div class="sec-head center"><span class="eyebrow">Solo comprando hoy</span><h2>Llévate también <em>5 bonos gratis</em></h2><p class="lead">Cinco materiales extra con el mismo paso a paso, fotos y gráficos de la colección. Toca las páginas para verlas en grande.</p></div>
     <div class="bgrid">
-      <article class="bc"><div class="cov"><figure><img src="assets/bono-1-tabla-de-puntos.webp" alt="Portada: Tabla de Puntos y Abreviaturas" loading="lazy" width="480" height="679" data-zoom><figcaption>Portada</figcaption></figure><figure><img src="assets/bono-1-interna.webp" alt="Página interna: Tabla de Puntos y Abreviaturas" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 1</small><h3>Tabla de Puntos y Abreviaturas</h3><p>Cadeneta, punto bajo, punto alto, aumentos, disminuciones y anillo mágico, con fotos y gráficos.</p><div class="val"><s data-valor="bono1">US$ —</s><span class="free">GRATIS</span></div></div></article>
-      <article class="bc"><div class="cov"><figure><img src="assets/bono-2-bolso-festival.webp" alt="Portada: Bolso Festival Porta Celular" loading="lazy" width="480" height="679" data-zoom><figcaption>Portada</figcaption></figure><figure><img src="assets/bono-2-interna.webp" alt="Página interna: Bolso Festival Porta Celular" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 2</small><h3>Bolso Festival Porta Celular</h3><p>Bolso cruzado para el celular, con tapa y correa larga para usar todo el día.</p><div class="val"><s data-valor="bono2">US$ —</s><span class="free">GRATIS</span></div></div></article>
-      <article class="bc"><div class="cov"><figure><img src="assets/bono-3-billetera.webp" alt="Portada: Billetera a Crochet" loading="lazy" width="480" height="679" data-zoom><figcaption>Portada</figcaption></figure><figure><img src="assets/bono-3-interna.webp" alt="Página interna: Billetera a Crochet" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 3</small><h3>Billetera a Crochet</h3><p>Billetera con tarjeteros, espacio para billetes y monedero con cierre.</p><div class="val"><s data-valor="bono3">US$ —</s><span class="free">GRATIS</span></div></div></article>
-      <article class="bc"><div class="cov"><figure><img src="assets/bono-4-portachaquetas.webp" alt="Portada: Portachaquetas a Crochet" loading="lazy" width="480" height="679" data-zoom><figcaption>Portada</figcaption></figure><figure><img src="assets/bono-4-interna.webp" alt="Página interna: Portachaquetas a Crochet" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 4</small><h3>Portachaquetas a Crochet</h3><p>Tira con mosquetón para llevar tu chaqueta colgada del bolso, con las manos libres.</p><div class="val"><s data-valor="bono4">US$ —</s><span class="free">GRATIS</span></div></div></article>
-      <article class="bc super"><div class="cov"><figure><img src="assets/bono-5-estuche-lentes.webp" alt="Portada: Estuche para Lentes a Crochet" loading="lazy" width="480" height="679" data-zoom><figcaption>Portada</figcaption></figure><figure><img src="assets/bono-5-interna.webp" alt="Página interna: Estuche para Lentes a Crochet" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Súper Bono</small><h3>Estuche para Lentes a Crochet</h3><p>Estuche tipo sobre con solapa y forro suave para proteger tus lentes.</p><div class="val"><s data-valor="bono5">US$ —</s><span class="free">GRATIS</span></div></div></article>
+      <article class="bc"><div class="cov"><figure><div class="dev tab"><img src="assets/bono-1-tabla-de-puntos.webp" alt="Portada: Tabla de Puntos y Abreviaturas" loading="lazy" width="480" height="679" data-zoom></div></figure><figure><img src="assets/bono-1-interna.webp" alt="Página interna: Tabla de Puntos y Abreviaturas" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 1</small><h3>Tabla de Puntos y Abreviaturas</h3><p>Cadeneta, punto bajo, punto alto, aumentos, disminuciones y anillo mágico, con fotos y gráficos.</p><div class="val"><s data-valor="bono1">US$ —</s><span class="free">GRATIS</span></div></div></article>
+      <article class="bc"><div class="cov"><figure><div class="dev tab"><img src="assets/bono-2-bolso-festival.webp" alt="Portada: Bolso Festival Porta Celular" loading="lazy" width="480" height="679" data-zoom></div></figure><figure><img src="assets/bono-2-interna.webp" alt="Página interna: Bolso Festival Porta Celular" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 2</small><h3>Bolso Festival Porta Celular</h3><p>Bolso cruzado para el celular, con tapa y correa larga para usar todo el día.</p><div class="val"><s data-valor="bono2">US$ —</s><span class="free">GRATIS</span></div></div></article>
+      <article class="bc"><div class="cov"><figure><div class="dev tab"><img src="assets/bono-3-billetera.webp" alt="Portada: Billetera a Crochet" loading="lazy" width="480" height="679" data-zoom></div></figure><figure><img src="assets/bono-3-interna.webp" alt="Página interna: Billetera a Crochet" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 3</small><h3>Billetera a Crochet</h3><p>Billetera con tarjeteros, espacio para billetes y monedero con cierre.</p><div class="val"><s data-valor="bono3">US$ —</s><span class="free">GRATIS</span></div></div></article>
+      <article class="bc"><div class="cov"><figure><div class="dev tab"><img src="assets/bono-4-portachaquetas.webp" alt="Portada: Portachaquetas a Crochet" loading="lazy" width="480" height="679" data-zoom></div></figure><figure><img src="assets/bono-4-interna.webp" alt="Página interna: Portachaquetas a Crochet" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Bono 4</small><h3>Portachaquetas a Crochet</h3><p>Tira con mosquetón para llevar tu chaqueta colgada del bolso, con las manos libres.</p><div class="val"><s data-valor="bono4">US$ —</s><span class="free">GRATIS</span></div></div></article>
+      <article class="bc super"><div class="cov"><figure><div class="dev tab"><img src="assets/bono-5-estuche-lentes.webp" alt="Portada: Estuche para Lentes a Crochet" loading="lazy" width="480" height="679" data-zoom></div></figure><figure><img src="assets/bono-5-interna.webp" alt="Página interna: Estuche para Lentes a Crochet" loading="lazy" width="720" height="1019" data-zoom><figcaption>Por dentro</figcaption></figure></div><div class="tx"><small>Súper Bono</small><h3>Estuche para Lentes a Crochet</h3><p>Estuche tipo sobre con solapa y forro suave para proteger tus lentes.</p><div class="val"><s data-valor="bono5">US$ —</s><span class="free">GRATIS</span></div></div></article>
     </div>
     <div class="after"><a href="#oferta" class="btn">QUIERO LA COLECCIÓN + 5 BONOS</a></div>
   </div>
@@ -329,15 +337,15 @@ footer p{max-width:760px;margin:0 auto 10px}
         <div class="pack">
           <div class="main"><img src="assets/mockup-guia.webp" alt="Guía 40 Bolsos a Crochet" loading="lazy" width="900" height="675"></div>
           <div class="row">
-            <img src="assets/bono-1-tabla-de-puntos.webp" alt="" loading="lazy" width="480" height="678">
-            <img src="assets/bono-2-bolso-festival.webp" alt="" loading="lazy" width="480" height="679">
-            <img src="assets/bono-3-billetera.webp" alt="" loading="lazy" width="480" height="679">
-            <img src="assets/bono-4-portachaquetas.webp" alt="" loading="lazy" width="480" height="678">
-            <img src="assets/bono-5-estuche-lentes.webp" alt="" loading="lazy" width="480" height="679">
+            <div class="dev tab"><img src="assets/bono-1-tabla-de-puntos.webp" alt="" loading="lazy" width="480" height="678"></div>
+            <div class="dev tab"><img src="assets/bono-2-bolso-festival.webp" alt="" loading="lazy" width="480" height="679"></div>
+            <div class="dev tab"><img src="assets/bono-3-billetera.webp" alt="" loading="lazy" width="480" height="679"></div>
+            <div class="dev tab"><img src="assets/bono-4-portachaquetas.webp" alt="" loading="lazy" width="480" height="678"></div>
+            <div class="dev tab"><img src="assets/bono-5-estuche-lentes.webp" alt="" loading="lazy" width="480" height="679"></div>
           </div>
         </div>
         <ul class="stack">
-          <li><b>40 Bolsos a Crochet que Parecen de Boutique</b><span data-valor="principal">US$ —</span></li>
+          <li><b>40 Bolsos a Crochet que Parecen de Boutique</b><span><s data-valor="principal">US$ —</s></span></li>
           <li><b>Bono 1 · Tabla de Puntos y Abreviaturas</b><span><s data-valor="bono1">US$ —</s></span></li>
           <li><b>Bono 2 · Bolso Festival Porta Celular</b><span><s data-valor="bono2">US$ —</s></span></li>
           <li><b>Bono 3 · Billetera a Crochet</b><span><s data-valor="bono3">US$ —</s></span></li>
@@ -410,10 +418,6 @@ footer p{max-width:760px;margin:0 auto 10px}
   </div>
 </footer>
 
-<div class="sticky" id="sticky">
-  <small>Precio especial<b data-precio>US$ 6,90</b></small>
-  <a href="#oferta" class="btn">QUIERO MIS 40 MODELOS</a>
-</div>
 
 <script>
 // ===== CONFIGURACIÓN: edita solo aquí =====
@@ -422,7 +426,7 @@ var CHECKOUT_URL = "";
 // Precio de venta (va en todos los lugares con el precio).
 var PRECIO = "6,90";
 // Valores tachados (ancla). Escribe solo el número, ej.: "27". Vacío = falta completar.
-var VALORES = {principal:"", bono1:"", bono2:"", bono3:"", bono4:"", bono5:""};
+var VALORES = {principal:"27,00", bono1:"9,90", bono2:"9,90", bono3:"7,90", bono4:"7,90", bono5:"10,90"};
 // ==========================================
 
 (function(){
@@ -438,16 +442,12 @@ var VALORES = {principal:"", bono1:"", bono2:"", bono3:"", bono4:"", bono5:""};
     });
   });
   document.querySelectorAll("[data-total]").forEach(function(e){
-    if(completo){e.textContent=fmt(String(Math.round(total*100)/100).replace(".",","))}else{e.innerHTML='<span class="todo">US$ ?</span>'}
+    if(completo){e.textContent=fmt(total.toFixed(2).replace(".",","))}else{e.innerHTML='<span class="todo">US$ ?</span>'}
   });
   var b=document.getElementById("btnCompra");
   if(CHECKOUT_URL){b.href=CHECKOUT_URL}else{b.addEventListener("click",function(e){e.preventDefault();alert("Falta pegar el link de Hotmart en CHECKOUT_URL")})}
   document.getElementById("y").textContent=new Date().getFullYear();
 
-  // barra fija: aparece después del topo y se esconde en la oferta
-  var st=document.getElementById("sticky"), hero=document.querySelector(".hero"), of=document.getElementById("oferta");
-  function upd(){var h=hero.getBoundingClientRect().bottom<0, r=of.getBoundingClientRect(), inOf=r.top<innerHeight&&r.bottom>0; st.classList.toggle("show",h&&!inOf)}
-  addEventListener("scroll",upd,{passive:true}); upd();
 
   // láminas
   var tr=document.getElementById("lamTrack"), step=function(){var f=tr.querySelector(".lam");return f?f.getBoundingClientRect().width+18:300};
