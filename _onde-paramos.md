@@ -7,7 +7,7 @@
 ## Em andamento
 - Rodada 2 da fundação (cliente e voz) adiada pela Fernanda: preencher por produto, começando pelas 40 bolsas de crochê. Falta: amostras de texto, lista do nunca, palavras do cliente, objeções e respostas
 - Lançar as 40 bolsas de crochê: ~~organizar os arquivos~~ (feito em 17/10, ver `empresa/oferta.md`), ajustar a página para low ticket, cadastrar na Hotmart, definir preços dos order bumps, minerar criativos, subir a primeira campanha V1
-- Pendências do entregável: ~~gerar a página 5 do Bônus 2~~ (feita em 17/10 no chat "Generar página 5" do ChatGPT); revisar a correa da página 4 do Bônus 2 (diz "6 cadenetas" e "2 pb de ancho", e a receita revisada falava em 5 pb de largura); conferir se as páginas Paneles e Asas do Bolso para Laptop também precisavam ser refeitas (o notebook aparecia no bolso de fora); decidir se bônus e bumps viram PDF (hoje são PNG)
+- Pendências do entregável: ~~gerar a página 5 do Bônus 2~~ (feita em 17/10 no chat "Generar página 5" do ChatGPT); ~~revisar a correa da página 4 do Bônus 2~~ (corrigida em 17/10: tapa começa com 16 cadenetas e é costurada depois; correa com 5 pb de largura; gráfico com 5 X por fila); conferir se as páginas Paneles e Asas do Bolso para Laptop também precisavam ser refeitas (o notebook aparecia no bolso de fora); decidir se bônus e bumps viram PDF (hoje são PNG)
 - Disco C: quase cheio (cerca de 25 MB livres em 17/10): liberar espaço antes de baixar ou gerar mais arquivos
 
 ## Decidido recentemente
