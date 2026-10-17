@@ -24,7 +24,7 @@
   5. Colección Premium: os quatro juntos + brinde Ranita Amigurumi (chaveiro de sapinho, 5 páginas)
 - **Ideia de preço dos bumps:** 5,90, 6,90 e 9,90, mais a Colección Premium por 19,90 (moeda a confirmar; preços ainda em definição com o Claude)
 - **Upsell:** ainda não pensado
-- **Página:** nova versão em `paginas/40-bolsos/` (17/10). Falta o link do checkout Hotmart (`CHECKOUT_URL` no bloco CONFIGURACIÓN no fim do `index.html`)
+- **Página:** nova versão em `paginas/40-bolsos/` (17/10). Para publicar faltam o link do checkout Hotmart (`CHECKOUT_URL`) e o ID do Pixel do Meta (`META_PIXEL_ID`), os dois no bloco CONFIGURACIÓN no fim do `index.html`. Sobe para a Hostinger a pasta inteira (index.html + assets, inclusive `assets/g/`, que são as versões grandes usadas para ampliar)
 - **Valores riscados na página (ancoragem), desde 17/10:** principal US$ 47,90; Bônus 1 US$ 7,90; Bônus 2 US$ 9,90; Bônus 3 US$ 9,90; Bônus 4 US$ 5,90; Súper Bono US$ 12,90; total US$ 94,40
   - Regras: o principal vale mais que todos os bônus juntos; o Súper Bono é o bônus de maior valor; tudo termina em ,90 (a ancoragem e o preço de venda); a âncora tem que continuar forte quando o preço chegar a US$ 24,90
 - **Garantia:** 7 dias
