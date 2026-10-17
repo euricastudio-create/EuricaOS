@@ -25,7 +25,8 @@
 - **Ideia de preço dos bumps:** 5,90, 6,90 e 9,90, mais a Colección Premium por 19,90 (moeda a confirmar; preços ainda em definição com o Claude)
 - **Upsell:** ainda não pensado
 - **Página:** nova versão em `paginas/40-bolsos/` (17/10). Falta o link do checkout Hotmart (`CHECKOUT_URL` no bloco CONFIGURACIÓN no fim do `index.html`)
-- **Valores riscados na página (ancoragem):** principal US$ 27,00; bônus 1 e 2 US$ 9,90; bônus 3 e 4 US$ 7,90; Súper Bono US$ 10,90; total US$ 73,50
+- **Valores riscados na página (ancoragem), desde 17/10:** principal US$ 47,90; Bônus 1 US$ 7,90; Bônus 2 US$ 9,90; Bônus 3 US$ 9,90; Bônus 4 US$ 5,90; Súper Bono US$ 12,90; total US$ 94,40
+  - Regras: o principal vale mais que todos os bônus juntos; o Súper Bono é o bônus de maior valor; tudo termina em ,90 (a ancoragem e o preço de venda); a âncora tem que continuar forte quando o preço chegar a US$ 24,90
 - **Garantia:** 7 dias
 - **Order bumps:** aparecem só no checkout da Hotmart, não na página
 - **Arquivos do produto:** organizados em `C:\Users\ferna\OneDrive\Desktop\EURICA\40 Bolsos a Crochet - Entregaveis\` (produto principal em PDF; bônus e bumps em PNG A4, uma imagem por página). Versões que não foram usadas ficam em `_versoes_descartadas`
