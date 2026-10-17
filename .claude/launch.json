@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pagina-40-bolsos",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8732", "--directory", "paginas/40-bolsos"],
+      "port": 8732
+    }
+  ]
+}
