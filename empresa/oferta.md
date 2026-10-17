@@ -12,7 +12,7 @@
 - **Nome do produto:** 40 Bolsos a Crochet que Parecen de Boutique (40 modelos, 6 lâminas A4 cada)
 - **Bônus (5):**
   1. Tabla de Puntos y Abreviaturas (amarelo pastel, 6 páginas)
-  2. Bolso Festival Porta Celular (rosé, 5 páginas; **falta a página 5**, Montaje y acabados)
+  2. Bolso Festival Porta Celular (rosé, 5 páginas)
   3. Billetera a Crochet (verde sálvia, 8 páginas)
   4. Portachaquetas a Crochet (azul pastel, 6 páginas)
   5. SÚPER BONO: Estuche para Lentes a Crochet (terracota, 4 páginas)
