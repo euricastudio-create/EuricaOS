@@ -61,14 +61,31 @@ section{padding:clamp(52px,8vw,96px) 0}
 .hero .btn{width:min(440px,100%)}
 .dev{background:#16110e;padding:2.2%;border-radius:clamp(8px,1.6vw,14px);box-shadow:0 14px 30px rgba(20,12,8,.30);outline:1px solid rgba(255,255,255,.08);outline-offset:-1px}
 .dev img{border-radius:clamp(4px,1vw,8px);background:#fff}
-.ticks{list-style:none;display:grid;gap:9px;margin-top:22px;text-align:left}
-.ticks li{display:flex;gap:11px;align-items:flex-start;font-weight:600}
-.ticks li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font-size:.75rem;display:grid;place-items:center;margin-top:3px}
 .price-line{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-bottom:16px;text-align:left}
 .price-line .p{white-space:nowrap;font-family:"Playfair Display",serif;font-size:2.6rem;font-weight:700;line-height:1}
 .price-line small{color:var(--muted);font-size:.9rem;line-height:1.3}
 
 /* pain */
+.m40{width:100%;margin-top:26px}
+.m40-lab{font-size:.9rem;color:var(--brown);margin-bottom:10px}
+.m40-lab b{color:var(--camel)}
+.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq+.mq{margin-top:8px}
+.mq-t{display:flex;gap:8px;width:max-content;animation:mq 70s linear infinite}
+.mq.r2 .mq-t{animation-direction:reverse;animation-duration:80s}
+.mq:hover .mq-t{animation-play-state:paused}
+.mq figure{position:relative;flex:none;width:112px;border-radius:10px;overflow:hidden;box-shadow:var(--sh-sm);background:var(--cream-2)}
+.mq figure img{aspect-ratio:4/3;object-fit:cover}
+.mq figcaption{position:absolute;left:5px;top:5px;background:rgba(255,253,249,.92);border-radius:99px;padding:0 7px;font-size:.62rem;font-weight:700;color:var(--camel)}
+@keyframes mq{to{transform:translateX(calc(-50% - 4px))}}
+.fx{font-size:.78rem;color:var(--muted);margin-top:8px}
+.mlevels{text-align:center;color:var(--muted);font-size:.92rem;margin-top:18px}
+.como{background:var(--cream)}
+.steps3{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto;counter-reset:none}
+.steps3 li{background:var(--paper);border:1px solid var(--border);border-radius:var(--r);padding:22px 20px;text-align:center;box-shadow:var(--sh-sm)}
+.steps3 span{display:grid;place-items:center;width:44px;height:44px;margin:0 auto 10px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;font-size:1.1rem}
+.steps3 b{display:block;font-family:"Playfair Display",serif;font-size:1.2rem;margin-bottom:4px}
+.steps3 p{font-size:.92rem;color:var(--brown)}
 .vs{background:var(--paper);border-block:1px solid var(--border)}
 .vs-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:16px;max-width:860px;margin:0 auto;align-items:stretch}
 .vs-col{border-radius:var(--r-lg);padding:22px 22px 24px}
@@ -116,12 +133,6 @@ section{padding:clamp(52px,8vw,96px) 0}
 .mc figcaption{padding:10px 14px 14px}
 .mc small{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--camel)}
 .mc b{display:block;font-family:"Playfair Display",serif;font-size:1.15rem}
-.allm{margin-top:28px;background:var(--paper);border:1px solid var(--border);border-radius:var(--r-lg);padding:22px}
-.allm h3{text-align:center;margin-bottom:6px}
-.allm p{text-align:center;color:var(--muted);font-size:.9rem;margin-bottom:16px}
-.mnames{list-style:none;columns:4;column-gap:18px;font-size:.92rem}
-.mnames li{break-inside:avoid;padding:5px 0;border-bottom:1px dashed var(--border)}
-.mnames li span{display:inline-block;min-width:28px;font-weight:700;color:var(--camel)}
 .after{margin-top:32px;text-align:center}
 
 /* bonos */
@@ -203,18 +214,18 @@ footer p{max-width:760px;margin:0 auto 10px}
   .hero .sub{margin:10px 0 16px;font-size:1rem}
   .pain{font-size:.82rem;margin-bottom:10px}
   .price-line{margin-bottom:12px}.price-line .p{font-size:2.2rem}
+  .steps3{grid-template-columns:1fr;gap:10px}.steps3 li{display:grid;grid-template-columns:44px 1fr;column-gap:14px;text-align:left;padding:14px 16px;align-items:center}.steps3 span{grid-row:span 2;margin:0}.steps3 b{font-size:1.08rem;margin:0}.steps3 p{grid-column:2}
   .vs-grid{grid-template-columns:1fr}.sin{align-self:stretch}
   .mgrid{grid-template-columns:repeat(2,1fr);gap:10px}
   .mc b{font-size:1rem}.mc figcaption{padding:8px 10px 10px}
-  .mnames{columns:2;font-size:.86rem}
-  .bgrid{grid-template-columns:1fr}
+    .bgrid{grid-template-columns:1fr}
   .buy{position:static}
   .guar-box{grid-template-columns:1fr;text-align:center;justify-items:center}
 }
 @media(min-width:600px) and (max-width:900px){
   .bgrid{grid-template-columns:1fr 1fr}
 }
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.mq{overflow-x:auto}}
 </style>
 </head>
 <body>
@@ -232,12 +243,13 @@ footer p{max-width:760px;margin:0 auto 10px}
   <div class="wrap hero-c">
     <div class="price-line"><span class="p" data-precio>US$ 6,90</span><small>pago único<br>sin mensualidades</small></div>
     <a href="#oferta" class="btn pulse">QUIERO MIS 40 MODELOS</a>
+    <p class="fx">Al hacer clic, el valor se convierte automáticamente a tu moneda local.</p>
     <div class="trust"><span>Pago seguro</span><span>Acceso inmediato</span><span>Garantía de 7 días</span></div>
-    <ul class="ticks">
-      <li>40 modelos, del bolso de diario a la pieza de fiesta</li>
-      <li>6 láminas por modelo: fotos, gráfico y paso a paso</li>
-      <li>5 bonos incluidos y acceso inmediato</li>
-    </ul>
+    <div class="m40">
+      <p class="m40-lab"><b>40 modelos</b> incluidos en la guía</p>
+      <div class="mq r1"><div class="mq-t"><figure><img src="assets/m/01.webp" alt="Modelo 01: Tote Riviera" loading="lazy" width="240" height="180"><figcaption>01</figcaption></figure><figure><img src="assets/m/02.webp" alt="Modelo 02: Bucket Siena" loading="lazy" width="240" height="180"><figcaption>02</figcaption></figure><figure><img src="assets/m/03.webp" alt="Modelo 03: Mini Bag Mónaco" loading="lazy" width="240" height="180"><figcaption>03</figcaption></figure><figure><img src="assets/m/04.webp" alt="Modelo 04: Clutch Marbella" loading="lazy" width="240" height="180"><figcaption>04</figcaption></figure><figure><img src="assets/m/05.webp" alt="Modelo 05: Bolso Jardín" loading="lazy" width="240" height="180"><figcaption>05</figcaption></figure><figure><img src="assets/m/06.webp" alt="Modelo 06: Pouch Ibiza" loading="lazy" width="240" height="180"><figcaption>06</figcaption></figure><figure><img src="assets/m/07.webp" alt="Modelo 07: Hobo Caramelo" loading="lazy" width="240" height="180"><figcaption>07</figcaption></figure><figure><img src="assets/m/08.webp" alt="Modelo 08: Crossbody Lisboa" loading="lazy" width="240" height="180"><figcaption>08</figcaption></figure><figure><img src="assets/m/09.webp" alt="Modelo 09: Hobo Sevilla" loading="lazy" width="240" height="180"><figcaption>09</figcaption></figure><figure><img src="assets/m/10.webp" alt="Modelo 10: Hobo Salvia" loading="lazy" width="240" height="180"><figcaption>10</figcaption></figure><figure><img src="assets/m/11.webp" alt="Modelo 11: Bolso Toscana" loading="lazy" width="240" height="180"><figcaption>11</figcaption></figure><figure><img src="assets/m/12.webp" alt="Modelo 12: Bolso Capri" loading="lazy" width="240" height="180"><figcaption>12</figcaption></figure><figure><img src="assets/m/13.webp" alt="Modelo 13: Tote Dunas" loading="lazy" width="240" height="180"><figcaption>13</figcaption></figure><figure><img src="assets/m/14.webp" alt="Modelo 14: Shopper Terra" loading="lazy" width="240" height="180"><figcaption>14</figcaption></figure><figure><img src="assets/m/15.webp" alt="Modelo 15: Tote Primavera" loading="lazy" width="240" height="180"><figcaption>15</figcaption></figure><figure><img src="assets/m/16.webp" alt="Modelo 16: Bolso Granny Crema" loading="lazy" width="240" height="180"><figcaption>16</figcaption></figure><figure><img src="assets/m/17.webp" alt="Modelo 17: Baguette Noir" loading="lazy" width="240" height="180"><figcaption>17</figcaption></figure><figure><img src="assets/m/18.webp" alt="Modelo 18: Bolso Tulum" loading="lazy" width="240" height="180"><figcaption>18</figcaption></figure><figure><img src="assets/m/19.webp" alt="Modelo 19: Bolso Esmeralda" loading="lazy" width="240" height="180"><figcaption>19</figcaption></figure><figure><img src="assets/m/20.webp" alt="Modelo 20: Bolso Perla" loading="lazy" width="240" height="180"><figcaption>20</figcaption></figure><figure aria-hidden="true"><img src="assets/m/01.webp" alt="" loading="lazy" width="240" height="180"><figcaption>01</figcaption></figure><figure aria-hidden="true"><img src="assets/m/02.webp" alt="" loading="lazy" width="240" height="180"><figcaption>02</figcaption></figure><figure aria-hidden="true"><img src="assets/m/03.webp" alt="" loading="lazy" width="240" height="180"><figcaption>03</figcaption></figure><figure aria-hidden="true"><img src="assets/m/04.webp" alt="" loading="lazy" width="240" height="180"><figcaption>04</figcaption></figure><figure aria-hidden="true"><img src="assets/m/05.webp" alt="" loading="lazy" width="240" height="180"><figcaption>05</figcaption></figure><figure aria-hidden="true"><img src="assets/m/06.webp" alt="" loading="lazy" width="240" height="180"><figcaption>06</figcaption></figure><figure aria-hidden="true"><img src="assets/m/07.webp" alt="" loading="lazy" width="240" height="180"><figcaption>07</figcaption></figure><figure aria-hidden="true"><img src="assets/m/08.webp" alt="" loading="lazy" width="240" height="180"><figcaption>08</figcaption></figure><figure aria-hidden="true"><img src="assets/m/09.webp" alt="" loading="lazy" width="240" height="180"><figcaption>09</figcaption></figure><figure aria-hidden="true"><img src="assets/m/10.webp" alt="" loading="lazy" width="240" height="180"><figcaption>10</figcaption></figure><figure aria-hidden="true"><img src="assets/m/11.webp" alt="" loading="lazy" width="240" height="180"><figcaption>11</figcaption></figure><figure aria-hidden="true"><img src="assets/m/12.webp" alt="" loading="lazy" width="240" height="180"><figcaption>12</figcaption></figure><figure aria-hidden="true"><img src="assets/m/13.webp" alt="" loading="lazy" width="240" height="180"><figcaption>13</figcaption></figure><figure aria-hidden="true"><img src="assets/m/14.webp" alt="" loading="lazy" width="240" height="180"><figcaption>14</figcaption></figure><figure aria-hidden="true"><img src="assets/m/15.webp" alt="" loading="lazy" width="240" height="180"><figcaption>15</figcaption></figure><figure aria-hidden="true"><img src="assets/m/16.webp" alt="" loading="lazy" width="240" height="180"><figcaption>16</figcaption></figure><figure aria-hidden="true"><img src="assets/m/17.webp" alt="" loading="lazy" width="240" height="180"><figcaption>17</figcaption></figure><figure aria-hidden="true"><img src="assets/m/18.webp" alt="" loading="lazy" width="240" height="180"><figcaption>18</figcaption></figure><figure aria-hidden="true"><img src="assets/m/19.webp" alt="" loading="lazy" width="240" height="180"><figcaption>19</figcaption></figure><figure aria-hidden="true"><img src="assets/m/20.webp" alt="" loading="lazy" width="240" height="180"><figcaption>20</figcaption></figure></div></div>
+      <div class="mq r2"><div class="mq-t"><figure><img src="assets/m/21.webp" alt="Modelo 21: Bolso Nube" loading="lazy" width="240" height="180"><figcaption>21</figcaption></figure><figure><img src="assets/m/22.webp" alt="Modelo 22: Tote Geométrica" loading="lazy" width="240" height="180"><figcaption>22</figcaption></figure><figure><img src="assets/m/23.webp" alt="Modelo 23: Bucket Granada" loading="lazy" width="240" height="180"><figcaption>23</figcaption></figure><figure><img src="assets/m/24.webp" alt="Modelo 24: Bucket Puerto" loading="lazy" width="240" height="180"><figcaption>24</figcaption></figure><figure><img src="assets/m/25.webp" alt="Modelo 25: Bolso Corazón" loading="lazy" width="240" height="180"><figcaption>25</figcaption></figure><figure><img src="assets/m/26.webp" alt="Modelo 26: Clutch Concha" loading="lazy" width="240" height="180"><figcaption>26</figcaption></figure><figure><img src="assets/m/27.webp" alt="Modelo 27: Clutch Noche" loading="lazy" width="240" height="180"><figcaption>27</figcaption></figure><figure><img src="assets/m/28.webp" alt="Modelo 28: Crossbody Carmín" loading="lazy" width="240" height="180"><figcaption>28</figcaption></figure><figure><img src="assets/m/29.webp" alt="Modelo 29: Bolso Girasol" loading="lazy" width="240" height="180"><figcaption>29</figcaption></figure><figure><img src="assets/m/30.webp" alt="Modelo 30: Tote Bohemia" loading="lazy" width="240" height="180"><figcaption>30</figcaption></figure><figure><img src="assets/m/31.webp" alt="Modelo 31: Tote Caribe" loading="lazy" width="240" height="180"><figcaption>31</figcaption></figure><figure><img src="assets/m/32.webp" alt="Modelo 32: Shopper Marinero" loading="lazy" width="240" height="180"><figcaption>32</figcaption></figure><figure><img src="assets/m/33.webp" alt="Modelo 33: Messenger Café" loading="lazy" width="240" height="180"><figcaption>33</figcaption></figure><figure><img src="assets/m/34.webp" alt="Modelo 34: Mochila Lavanda" loading="lazy" width="240" height="180"><figcaption>34</figcaption></figure><figure><img src="assets/m/35.webp" alt="Modelo 35: Mochila Aventura" loading="lazy" width="240" height="180"><figcaption>35</figcaption></figure><figure><img src="assets/m/36.webp" alt="Modelo 36: Hobo Arcoíris" loading="lazy" width="240" height="180"><figcaption>36</figcaption></figure><figure><img src="assets/m/37.webp" alt="Modelo 37: Bolso Trenzas" loading="lazy" width="240" height="180"><figcaption>37</figcaption></figure><figure><img src="assets/m/38.webp" alt="Modelo 38: Bolso Burbujas" loading="lazy" width="240" height="180"><figcaption>38</figcaption></figure><figure><img src="assets/m/39.webp" alt="Modelo 39: Bolso Cesta" loading="lazy" width="240" height="180"><figcaption>39</figcaption></figure><figure><img src="assets/m/40.webp" alt="Modelo 40: Mini Tote Latte" loading="lazy" width="240" height="180"><figcaption>40</figcaption></figure><figure aria-hidden="true"><img src="assets/m/21.webp" alt="" loading="lazy" width="240" height="180"><figcaption>21</figcaption></figure><figure aria-hidden="true"><img src="assets/m/22.webp" alt="" loading="lazy" width="240" height="180"><figcaption>22</figcaption></figure><figure aria-hidden="true"><img src="assets/m/23.webp" alt="" loading="lazy" width="240" height="180"><figcaption>23</figcaption></figure><figure aria-hidden="true"><img src="assets/m/24.webp" alt="" loading="lazy" width="240" height="180"><figcaption>24</figcaption></figure><figure aria-hidden="true"><img src="assets/m/25.webp" alt="" loading="lazy" width="240" height="180"><figcaption>25</figcaption></figure><figure aria-hidden="true"><img src="assets/m/26.webp" alt="" loading="lazy" width="240" height="180"><figcaption>26</figcaption></figure><figure aria-hidden="true"><img src="assets/m/27.webp" alt="" loading="lazy" width="240" height="180"><figcaption>27</figcaption></figure><figure aria-hidden="true"><img src="assets/m/28.webp" alt="" loading="lazy" width="240" height="180"><figcaption>28</figcaption></figure><figure aria-hidden="true"><img src="assets/m/29.webp" alt="" loading="lazy" width="240" height="180"><figcaption>29</figcaption></figure><figure aria-hidden="true"><img src="assets/m/30.webp" alt="" loading="lazy" width="240" height="180"><figcaption>30</figcaption></figure><figure aria-hidden="true"><img src="assets/m/31.webp" alt="" loading="lazy" width="240" height="180"><figcaption>31</figcaption></figure><figure aria-hidden="true"><img src="assets/m/32.webp" alt="" loading="lazy" width="240" height="180"><figcaption>32</figcaption></figure><figure aria-hidden="true"><img src="assets/m/33.webp" alt="" loading="lazy" width="240" height="180"><figcaption>33</figcaption></figure><figure aria-hidden="true"><img src="assets/m/34.webp" alt="" loading="lazy" width="240" height="180"><figcaption>34</figcaption></figure><figure aria-hidden="true"><img src="assets/m/35.webp" alt="" loading="lazy" width="240" height="180"><figcaption>35</figcaption></figure><figure aria-hidden="true"><img src="assets/m/36.webp" alt="" loading="lazy" width="240" height="180"><figcaption>36</figcaption></figure><figure aria-hidden="true"><img src="assets/m/37.webp" alt="" loading="lazy" width="240" height="180"><figcaption>37</figcaption></figure><figure aria-hidden="true"><img src="assets/m/38.webp" alt="" loading="lazy" width="240" height="180"><figcaption>38</figcaption></figure><figure aria-hidden="true"><img src="assets/m/39.webp" alt="" loading="lazy" width="240" height="180"><figcaption>39</figcaption></figure><figure aria-hidden="true"><img src="assets/m/40.webp" alt="" loading="lazy" width="240" height="180"><figcaption>40</figcaption></figure></div></div>
+    </div>
   </div>
 </header>
 
@@ -287,16 +299,7 @@ footer p{max-width:760px;margin:0 auto 10px}
       <figure class="mc"><div class="mi"><img src="assets/modelo-07-hobo-caramelo.webp" alt="Hobo Caramelo con asa integrada" loading="lazy" width="560" height="420"><span class="lvl">Intermedio</span></div><figcaption><small>Modelo 07</small><b>Hobo Caramelo</b></figcaption></figure>
       <figure class="mc"><div class="mi"><img src="assets/modelo-08-crossbody-lisboa.webp" alt="Crossbody Lisboa con solapa y cierre" loading="lazy" width="560" height="420"><span class="lvl">Intermedio</span></div><figcaption><small>Modelo 08</small><b>Crossbody Lisboa</b></figcaption></figure>
     </div>
-    <div class="allm">
-      <h3>Los 40 modelos de la colección</h3>
-      <p>11 fáciles · 22 intermedios · 7 detallados</p>
-      <ol class="mnames">
-        <li><span>01</span>Tote Riviera</li><li><span>02</span>Bucket Siena</li><li><span>03</span>Mini Bag Mónaco</li><li><span>04</span>Clutch Marbella</li><li><span>05</span>Bolso Jardín</li><li><span>06</span>Pouch Ibiza</li><li><span>07</span>Hobo Caramelo</li><li><span>08</span>Crossbody Lisboa</li><li><span>09</span>Hobo Sevilla</li><li><span>10</span>Hobo Salvia</li>
-        <li><span>11</span>Bolso Toscana</li><li><span>12</span>Bolso Capri</li><li><span>13</span>Tote Dunas</li><li><span>14</span>Shopper Terra</li><li><span>15</span>Tote Primavera</li><li><span>16</span>Bolso Granny Crema</li><li><span>17</span>Baguette Noir</li><li><span>18</span>Bolso Tulum</li><li><span>19</span>Bolso Esmeralda</li><li><span>20</span>Bolso Perla</li>
-        <li><span>21</span>Bolso Nube</li><li><span>22</span>Tote Geométrica</li><li><span>23</span>Bucket Granada</li><li><span>24</span>Bucket Puerto</li><li><span>25</span>Bolso Corazón</li><li><span>26</span>Clutch Concha</li><li><span>27</span>Clutch Noche</li><li><span>28</span>Crossbody Carmín</li><li><span>29</span>Bolso Girasol</li><li><span>30</span>Tote Bohemia</li>
-        <li><span>31</span>Tote Caribe</li><li><span>32</span>Shopper Marinero</li><li><span>33</span>Messenger Café</li><li><span>34</span>Mochila Lavanda</li><li><span>35</span>Mochila Aventura</li><li><span>36</span>Hobo Arcoíris</li><li><span>37</span>Bolso Trenzas</li><li><span>38</span>Bolso Burbujas</li><li><span>39</span>Bolso Cesta</li><li><span>40</span>Mini Tote Latte</li>
-      </ol>
-    </div>
+    <p class="mlevels">Y 32 modelos más · 11 fáciles, 22 intermedios y 7 detallados</p>
     <div class="after"><a href="#oferta" class="btn">QUIERO LOS 40 MODELOS</a></div>
   </div>
 </section>
@@ -316,7 +319,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         </ul>
       </div>
       <div class="vs-col con">
-        <div class="vs-img"><img src="assets/modelo-07-hobo-caramelo.webp" alt="Bolso Hobo Caramelo terminado con la guía" loading="lazy" width="560" height="420"></div>
+        <div class="vs-img"><img src="assets/con-la-guia-girasol.webp" alt="Bolso Girasol terminado con la guía" loading="lazy" width="600" height="450"></div>
         <h3>Con la guía</h3>
         <ul>
           <li>Acabado de boutique</li>
@@ -375,6 +378,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         <div class="big-price" data-precio-grande><sup>US$</sup>6,90</div>
         <p class="sm">Pago único · Acceso inmediato</p>
         <a href="#" id="btnCompra" class="btn block pulse">SÍ, QUIERO ACCEDER AHORA</a>
+        <p class="fx">Al hacer clic, el valor se convierte automáticamente a tu moneda local.</p>
         <ul>
           <li>40 modelos con 6 láminas cada uno</li>
           <li>5 bonos incluidos</li>
@@ -384,6 +388,18 @@ footer p{max-width:760px;margin:0 auto 10px}
         <p class="pay">Compra 100% segura por Hotmart</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CÓMO RECIBES -->
+<section class="como">
+  <div class="wrap">
+    <div class="sec-head center"><span class="eyebrow">Simple y rápido</span><h2>Cómo recibes <em>tu acceso</em></h2></div>
+    <ol class="steps3">
+      <li><span>1</span><b>Haces tu compra</b><p>Pago seguro por Hotmart, con tu tarjeta o el medio que prefieras.</p></li>
+      <li><span>2</span><b>Recibes el acceso</b><p>En pocos minutos llega a tu correo el acceso a la guía y a los 5 bonos.</p></li>
+      <li><span>3</span><b>Empiezas a tejer</b><p>Abres el material en el celular, la tableta o la computadora, o imprimes las láminas.</p></li>
+    </ol>
   </div>
 </section>
 
