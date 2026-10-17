@@ -24,7 +24,8 @@
   5. Colección Premium: os quatro juntos + brinde Ranita Amigurumi (chaveiro de sapinho, 5 páginas)
 - **Ideia de preço dos bumps:** 5,90, 6,90 e 9,90, mais a Colección Premium por 19,90 (moeda a confirmar; preços ainda em definição com o Claude)
 - **Upsell:** ainda não pensado
-- **Página:** nova versão em `paginas/40-bolsos/` (17/10). Faltam os valores riscados do principal e dos bônus e o link do checkout Hotmart (os dois ficam no bloco CONFIGURACIÓN no fim do `index.html`)
+- **Página:** nova versão em `paginas/40-bolsos/` (17/10). Falta o link do checkout Hotmart (`CHECKOUT_URL` no bloco CONFIGURACIÓN no fim do `index.html`)
+- **Valores riscados na página (ancoragem):** principal US$ 27,00; bônus 1 e 2 US$ 9,90; bônus 3 e 4 US$ 7,90; Súper Bono US$ 10,90; total US$ 73,50
 - **Garantia:** 7 dias
 - **Order bumps:** aparecem só no checkout da Hotmart, não na página
 - **Arquivos do produto:** organizados em `C:\Users\ferna\OneDrive\Desktop\EURICA\40 Bolsos a Crochet - Entregaveis\` (produto principal em PDF; bônus e bumps em PNG A4, uma imagem por página). Versões que não foram usadas ficam em `_versoes_descartadas`
