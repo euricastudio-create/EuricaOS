@@ -30,6 +30,7 @@
 - **Garantia:** 7 dias
 - **Order bumps:** aparecem só no checkout da Hotmart, não na página
 - **Arquivos do produto:** organizados em `C:\Users\ferna\OneDrive\Desktop\EURICA\40 Bolsos a Crochet - Entregaveis\` (produto principal em PDF; bônus e bumps em PNG A4, uma imagem por página). Versões que não foram usadas ficam em `_versoes_descartadas`
+- **Capa para a Hotmart (17/10):** `05 Imagens Hotmart\capa-hotmart-600x600.jpg` (gerada no ChatGPT, chat "Criar capa para Hotmart"; também há a versão 1254x1254)
 - **Arquivos para subir na Hotmart (17/10):** pasta `04 PDFs para Hotmart\`: `40 Bolsos a Crochet.pdf` (modelos 01 a 40, 240 páginas, 26,9 MB, com índice de navegação por modelo, sem a lista oficial), 5 PDFs de bônus e 5 PDFs de bumps (1,6 a 3,2 MB cada; o Bump 5 junta a capa da Colección Premium com a Ranita)
 
 ## Como um leva ao outro
